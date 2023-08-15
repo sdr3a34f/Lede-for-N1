@@ -106,7 +106,7 @@ jobs:
         du -h --max-depth=1 ./ --exclude=build_dir --exclude=bin
         du -h --max-depth=1 ./build_dir
         du -h --max-depth=1 ./bin
-        echo "::set-output name=status::success"
+        echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Package Armvirt as OpenWrt
       uses: ophub/flippy-openwrt-actions@main
@@ -137,7 +137,7 @@ jobs:
     - name: Remove old Releases
       uses: dev-drprasad/delete-older-releases@master
       with:
-        keep_latest: 10
+        keep_latest: 6
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.RELEASES_TOKEN }}
