@@ -143,6 +143,7 @@ CONFIG_PACKAGE_luci-app-ttyd=y
 # CONFIG_PACKAGE_luci-app-vsftpd is not set
 # CONFIG_PACKAGE_luci-app-wol is not set
 # CONFIG_PACKAGE_luci-app-zerotier is not set
+# CONFIG_PACKAGE_luci-app-vlmcsd is not set
 CONFIG_PACKAGE_luci-compat=y
 CONFIG_PACKAGE_luci-i18n-amlogic-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
