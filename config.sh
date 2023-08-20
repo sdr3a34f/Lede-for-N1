@@ -363,4 +363,7 @@ CONFIG_PACKAGE_xray-core=y
 # CONFIG_PACKAGE_luci-i18n-dockerman-zh-cn is not set
 # CONFIG_PACKAGE_luci-lib-docker is not set
 # CONFIG_PERL_THREADS is not set
+
+# themes
+CONFIG_PACKAGE_luci-theme-opentomcat=y
 EOF
