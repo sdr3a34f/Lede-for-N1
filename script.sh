@@ -15,7 +15,8 @@ rm -rf package/lean/luci-theme-argon
 #Add amlogic管理
 svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/lean/luci-app-amlogic
 #Add luci-app-passwall
-git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git package/lean/luci-app-passwall
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
+svn export https://github.com/xiaorouji/openwrt-passwall2/trunk/luci-app-passwall2 package/luci-app-passwall2
 #Add openclash
 # svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/lean/luci-app-openclash
 #Add luci-app-smartdns
