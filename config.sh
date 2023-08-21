@@ -227,7 +227,7 @@ CONFIG_boost-compile-visibility-hidden=y
 CONFIG_boost-runtime-shared=y
 CONFIG_boost-static-and-shared-libs=y
 CONFIG_boost-variant-release=y
-CONFIG_PACKAGE_chinadns-ng=y
+# CONFIG_PACKAGE_chinadns-ng is not set
 CONFIG_PACKAGE_coreutils=y
 # CONFIG_PACKAGE_coreutils-b2sum is not set
 # CONFIG_PACKAGE_coreutils-base32 is not set
@@ -363,7 +363,4 @@ CONFIG_PACKAGE_xray-core=y
 # CONFIG_PACKAGE_luci-i18n-dockerman-zh-cn is not set
 # CONFIG_PACKAGE_luci-lib-docker is not set
 # CONFIG_PERL_THREADS is not set
-
-# themes
-CONFIG_PACKAGE_luci-theme-opentomcat=y
 EOF
