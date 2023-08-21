@@ -348,9 +348,9 @@ CONFIG_PACKAGE_pdnsd-alt=y
 CONFIG_PACKAGE_resolveip=y
 CONFIG_PACKAGE_shadowsocks-rust-sslocal=y
 CONFIG_PACKAGE_shadowsocks-rust-ssserver=y
-CONFIG_PACKAGE_shadowsocksr-libev-ssr-check=y
-CONFIG_PACKAGE_shadowsocksr-libev-ssr-local=y
-CONFIG_PACKAGE_shadowsocksr-libev-ssr-redir=y
+# CONFIG_PACKAGE_shadowsocksr-libev-ssr-check is not set
+# CONFIG_PACKAGE_shadowsocksr-libev-ssr-local is not set
+# CONFIG_PACKAGE_shadowsocksr-libev-ssr-redir is not set
 CONFIG_PACKAGE_simple-obfs-client=y
 CONFIG_PACKAGE_tcping=y
 CONFIG_PACKAGE_xray-core=y
