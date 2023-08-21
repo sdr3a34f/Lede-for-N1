@@ -21,7 +21,7 @@ CONFIG_PACKAGE_boost=y
 CONFIG_PACKAGE_boost-date_time=y
 CONFIG_PACKAGE_boost-program_options=y
 CONFIG_PACKAGE_boost-system=y
-CONFIG_PACKAGE_brook=y
+# CONFIG_PACKAGE_brook is not set
 CONFIG_PACKAGE_bsdtar=y
 CONFIG_PACKAGE_btrfs-progs=y
 CONFIG_PACKAGE_bzip2=y
