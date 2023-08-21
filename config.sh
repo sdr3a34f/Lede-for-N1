@@ -21,7 +21,7 @@ CONFIG_PACKAGE_boost=y
 CONFIG_PACKAGE_boost-date_time=y
 CONFIG_PACKAGE_boost-program_options=y
 CONFIG_PACKAGE_boost-system=y
-# CONFIG_PACKAGE_brook is not set
+CONFIG_PACKAGE_brook=y
 CONFIG_PACKAGE_bsdtar=y
 CONFIG_PACKAGE_btrfs-progs=y
 CONFIG_PACKAGE_bzip2=y
@@ -194,20 +194,20 @@ CONFIG_PACKAGE_perlbase-unicore=y
 CONFIG_PACKAGE_perlbase-utf8=y
 CONFIG_PACKAGE_perlbase-xsloader=y
 CONFIG_PACKAGE_pv=y
-# CONFIG_PACKAGE_shadowsocks-libev-ss-local is not set
-# CONFIG_PACKAGE_shadowsocks-libev-ss-redir is not set
+CONFIG_PACKAGE_shadowsocks-libev-ss-local=y
+CONFIG_PACKAGE_shadowsocks-libev-ss-redir=y
 CONFIG_PACKAGE_tar=y
 CONFIG_PACKAGE_terminfo=y
-# CONFIG_PACKAGE_trojan is not set
-# CONFIG_PACKAGE_trojan-go is not set
-# CONFIG_PACKAGE_trojan-plus is not set
+CONFIG_PACKAGE_trojan=y
+CONFIG_PACKAGE_trojan-go=y
+CONFIG_PACKAGE_trojan-plus=y
 CONFIG_PACKAGE_ttyd=y
 CONFIG_PACKAGE_unzip=y
 CONFIG_PACKAGE_uuidgen=y
-# CONFIG_PACKAGE_v2ray-core is not set
-# CONFIG_PACKAGE_v2ray-geoip is not set
-# CONFIG_PACKAGE_v2ray-geosite is not set
-# CONFIG_PACKAGE_v2ray-plugin is not set
+CONFIG_PACKAGE_v2ray-core=y
+CONFIG_PACKAGE_v2ray-geoip=y
+CONFIG_PACKAGE_v2ray-geosite=y
+CONFIG_PACKAGE_v2ray-plugin=y
 # CONFIG_PACKAGE_vsftpd-alt is not set
 # CONFIG_PACKAGE_wol is not set
 CONFIG_PACKAGE_xfs-fsck=y
@@ -346,12 +346,12 @@ CONFIG_PACKAGE_libudns=y
 # CONFIG_PACKAGE_nlbwmon is not set
 CONFIG_PACKAGE_pdnsd-alt=y
 CONFIG_PACKAGE_resolveip=y
-# CONFIG_PACKAGE_shadowsocks-rust-sslocal is not set
-# CONFIG_PACKAGE_shadowsocks-rust-ssserver is not set
-# CONFIG_PACKAGE_shadowsocksr-libev-ssr-check is not set
-# CONFIG_PACKAGE_shadowsocksr-libev-ssr-local is not set
-# CONFIG_PACKAGE_shadowsocksr-libev-ssr-redir is not set
-# CONFIG_PACKAGE_simple-obfs-client is not set
+CONFIG_PACKAGE_shadowsocks-rust-sslocal=y
+CONFIG_PACKAGE_shadowsocks-rust-ssserver=y
+CONFIG_PACKAGE_shadowsocksr-libev-ssr-check=y
+CONFIG_PACKAGE_shadowsocksr-libev-ssr-local=y
+CONFIG_PACKAGE_shadowsocksr-libev-ssr-redir=y
+CONFIG_PACKAGE_simple-obfs-client=y
 CONFIG_PACKAGE_tcping=y
 CONFIG_PACKAGE_xray-core=y
 # CONFIG_DOCKER_CGROUP_OPTIONS is not set
