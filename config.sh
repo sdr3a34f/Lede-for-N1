@@ -198,9 +198,9 @@ CONFIG_PACKAGE_shadowsocks-libev-ss-local=y
 CONFIG_PACKAGE_shadowsocks-libev-ss-redir=y
 CONFIG_PACKAGE_tar=y
 CONFIG_PACKAGE_terminfo=y
-CONFIG_PACKAGE_trojan=y
-CONFIG_PACKAGE_trojan-go=y
-CONFIG_PACKAGE_trojan-plus=y
+# CONFIG_PACKAGE_trojan is not set
+# CONFIG_PACKAGE_trojan-go is not set
+# CONFIG_PACKAGE_trojan-plus is not set
 CONFIG_PACKAGE_ttyd=y
 CONFIG_PACKAGE_unzip=y
 CONFIG_PACKAGE_uuidgen=y
