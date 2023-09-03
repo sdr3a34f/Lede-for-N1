@@ -355,6 +355,7 @@ CONFIG_PACKAGE_resolveip=y
 # CONFIG_PACKAGE_simple-obfs-client is not set
 CONFIG_PACKAGE_tcping=y
 CONFIG_PACKAGE_xray-core=y
+CONFIG_PACKAGE_tuic-client=y
 # CONFIG_DOCKER_CGROUP_OPTIONS is not set
 # CONFIG_DOCKER_NET_MACVLAN is not set
 # CONFIG_DOCKER_STO_EXT4 is not set
