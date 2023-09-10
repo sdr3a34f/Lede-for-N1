@@ -21,11 +21,14 @@ CONFIG_PACKAGE_kmod-usb2=y
 # luci
 
 #分割线-------start
+CONFIG_PACKAGE_luci-app-amlogic=y
 CONFIG_PACKAGE_luci-app-filetransfer=y
 CONFIG_PACKAGE_luci-app-passwall2=y
 
-
-# Themes
+# ttyd
+CONFIG_PACKAGE_luci-app-ttyd=y
+CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
+CONFIG_PACKAGE_ttyd=y
 
 #分割线-------end
 
