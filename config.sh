@@ -21,16 +21,11 @@ CONFIG_PACKAGE_kmod-usb2=y
 # luci
 
 #分割线-------start
-CONFIG_PACKAGE_luci-compat=y
 CONFIG_PACKAGE_luci-app-filetransfer=y
-CONFIG_PACKAGE_luci-app-dockerman=n
-CONFIG_PACKAGE_luci-app-aliddns=n
 CONFIG_PACKAGE_luci-app-passwall2=y
-CONFIG_PACKAGE_luci-app-wol=n
-CONFIG_PACKAGE_luci-app-alist=n
+
 
 # Themes
-CONFIG_PACKAGE_luci-theme-argon=n
 
 #分割线-------end
 
