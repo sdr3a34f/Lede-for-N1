@@ -99,4 +99,6 @@ CONFIG_PACKAGE_luci-app-nlbwmon=n
 CONFIG_PACKAGE_coremark=n
 CONFIG_PACKAGE_luci-app-autoreboot=n
 CONFIG_PACKAGE_luci-i18n-autoreboot-zh-cn=n
+CONFIG_PACKAGE_wol=n
+CONFIG_PACKAGE_etherwake=n
 EOF
