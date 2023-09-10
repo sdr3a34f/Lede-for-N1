@@ -18,8 +18,9 @@ cd openwrt
 #Add amlogic管理
 svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/lean/luci-app-amlogic
 
-#Add luci-app-passwall
-# git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git package/lean/luci-app-passwall
+#Add luci-app-passwall2
+git clone https://github.com/xiaorouji/openwrt-passwall.git -b packages package/passwall_package
+git clone https://github.com/xiaorouji/openwrt-passwall2.git package/passwall2
 
 #Add openclash
 # svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/lean/luci-app-openclash
