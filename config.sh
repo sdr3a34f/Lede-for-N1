@@ -15,6 +15,13 @@ CONFIG_PACKAGE_ip6tables=y
 CONFIG_PACKAGE_ip6tables-extra=y
 CONFIG_PACKAGE_ip6tables-mod-nat=y
 CONFIG_PACKAGE_ipv6helper=y
+CONFIG_PACKAGE_luci-proto-ipv6=y
+CONFIG_PACKAGE_odhcp6c=y
+CONFIG_PACKAGE_odhcp6c_ext_cer_id=0
+CONFIG_PACKAGE_odhcpd-ipv6only=y
+CONFIG_PACKAGE_odhcpd_ipv6only_ext_cer_id=0
+CONFIG_PACKAGE_6in4=y
+CONFIG_PACKAGE_kmod-ipt-nat6=y
 
 # usb 2.0
 CONFIG_PACKAGE_kmod-usb-core=y
