@@ -16,27 +16,6 @@ config zone
 config include
 	option path '/etc/firewall.user'
 
-config include 'zerotier'
-	option type 'script'
-	option path '/etc/zerotier.start'
-	option reload '1'
-
-config include 'miniupnpd'
-	option type 'script'
-	option path '/usr/share/miniupnpd/firewall.include'
-	option family 'any'
-	option reload '1'
-
-config include 'mia'
-	option type 'script'
-	option path '/etc/mia.include'
-	option reload '1'
-
-config include 'shadowsocksr'
-	option type 'script'
-	option path '/var/etc/shadowsocksr.include'
-	option reload '1'
-
 config rule
 	option name 'Allow-DHCP-Renew'
 	option src 'lan'
