@@ -124,7 +124,7 @@ jobs:
         tag: OpenWrt_s905d_${{ env.PACKAGED_OUTPUTDATE }}
         name: N1-OpenWrt | ${{ env.DATE }}
         allowUpdates: true
-        artifacts: ${{ env.PACKAGED_OUTPUTPATH }}/*
+        artifacts: ${{ env.PACKAGED_OUTPUTPATH }}/*img.gz
         token: ${{ secrets.RELEASES_TOKEN }}
         body: |
           N1 OpenWrt 精简版本
