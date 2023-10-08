@@ -53,8 +53,6 @@ jobs:
         sudo -E systemctl daemon-reload
         sudo -E apt clean
         sudo timedatectl set-timezone "$TZ"
-        sudo mkdir -p /workdir
-        sudo chown $USER:$GROUPS /workdir
         df -Th
 
     - name: Clone source code
