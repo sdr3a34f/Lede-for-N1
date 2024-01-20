@@ -19,3 +19,6 @@ cd openwrt
 git clone https://github.com/ophub/luci-app-amlogic.git  package-temp/luci-app-amlogic
 mv -f package-temp/luci-app-amlogic/luci-app-amlogic package/lean/
 rm -rf package-temp
+
+# 修复编译错误
+sed -i 's/TARGET_CFLAGS += -DHAVE_MAP_SYNC/TARGET_CFLAGS += -DHAVE_MAP_SYNC -D_LARGEFILE64_SOURCE/g'  feeds/packages/utils/xfsprogs/Makefile
