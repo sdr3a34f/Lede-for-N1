@@ -22,4 +22,3 @@ rm -rf package-temp
 
 # 修复编译错误
 # sed -i 's/TARGET_CFLAGS += -DHAVE_MAP_SYNC/TARGET_CFLAGS += -DHAVE_MAP_SYNC -D_LARGEFILE64_SOURCE/g'  feeds/packages/utils/xfsprogs/Makefile
-curl -fsSL https://raw.githubusercontent.com/yunxi993/OpenWrt-ARMv8/main/patch/Makefile > feeds/packages/utils/xfsprogs/Makefile
