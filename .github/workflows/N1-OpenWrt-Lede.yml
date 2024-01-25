@@ -74,7 +74,6 @@ jobs:
       run: |
         chmod +x $SRC_SH
         ./$SRC_SH
-        sed -i 's/TARGET_CFLAGS.*/TARGET_CFLAGS += -DHAVE_MAP_SYNC -D_LARGEFILE64_SOURCE/g' feeds/packages/utils/xfsprogs/Makefile
         cd openwrt && ./scripts/feeds update -a
 
     - name: Install feeds
