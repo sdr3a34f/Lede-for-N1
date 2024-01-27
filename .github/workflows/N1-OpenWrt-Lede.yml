@@ -17,9 +17,9 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: .config
+  CONFIG_FILE: N1.config
   SCRIPT_SH: script.sh
-  CONFIG_SH: config.sh
+#  CONFIG_SH: config.sh
   SRC_SH: src.sh
   UPLOAD_FIRMWARE: true
   TZ: Asia/Shanghai
@@ -68,12 +68,12 @@ jobs:
       run: |
         [ -e files ] && mv files openwrt/files
         chmod +x $SCRIPT_SH
-        ./$SCRIPT_SH
+        $GITHUB_WORKSPACE/$SCRIPT_SH
                       
     - name: Update feeds
       run: |
         chmod +x $SRC_SH
-        ./$SRC_SH
+        $GITHUB_WORKSPACE/$SRC_SH
         cd openwrt && ./scripts/feeds update -a
 
     - name: Install feeds
@@ -82,7 +82,7 @@ jobs:
     - name: Load custom configuration
       run: |
         chmod +x $CONFIG_SH
-        ./$CONFIG_SH
+        $GITHUB_WORKSPACE/$CONFIG_SH
 
     - name: Download package
       run: |
