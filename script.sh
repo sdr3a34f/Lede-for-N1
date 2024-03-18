@@ -21,5 +21,4 @@ mv -f package-temp/luci-app-amlogic/luci-app-amlogic package/lean/
 rm -rf package-temp
 
 ## 微信/Telegram 推送插件
-
-git clone https://github.com/zzsj0928/luci-app-pushbot package/luci-app-pushbot
+git clone -b openwrt-18.06 https://github.com/tty228/luci-app-wechatpush.git
