@@ -18,7 +18,6 @@ env:
   REPO_BRANCH: master
   SCRIPT_SH: script.sh
   CONFIG_SH: N1_config.sh
- # SRC_SH: src.sh
   UPLOAD_FIRMWARE: true
   TZ: Asia/Shanghai
   
@@ -80,6 +79,9 @@ jobs:
       run: |
         cd openwrt
         ./scripts/feeds install -a
+        # OpenWrt golang新版本
+        rm -rf feeds/packages/lang/golang
+        git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
       
     - name: Load custom configuration
       run: |
