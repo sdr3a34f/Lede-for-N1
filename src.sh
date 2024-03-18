@@ -9,4 +9,4 @@ echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-pa
 echo "src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git;main" >> "feeds.conf.default"
 
 # 修复编译错误
-sed -i 's/TARGET_CFLAGS += -DHAVE_MAP_SYNC/TARGET_CFLAGS += -DHAVE_MAP_SYNC -D_LARGEFILE64_SOURCE/g'  feeds/packages/utils/xfsprogs/Makefile
+## sed -i 's/TARGET_CFLAGS += -DHAVE_MAP_SYNC/TARGET_CFLAGS += -DHAVE_MAP_SYNC -D_LARGEFILE64_SOURCE/g'  feeds/packages/utils/xfsprogs/Makefile
