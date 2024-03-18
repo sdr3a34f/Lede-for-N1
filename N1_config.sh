@@ -1,3 +1,6 @@
+#!/bin/bash
+cd openwrt
+cat >> .config <<EOF
 CONFIG_TARGET_armvirt=y
 CONFIG_TARGET_armvirt_64=y
 CONFIG_TARGET_armvirt_64_Default=y
@@ -109,3 +112,4 @@ CONFIG_PACKAGE_luci-i18n-autoreboot-zh-cn=n
 CONFIG_PACKAGE_luci-app-wol=n
 CONFIG_PACKAGE_wol=n
 CONFIG_PACKAGE_etherwake=n
+EOF
