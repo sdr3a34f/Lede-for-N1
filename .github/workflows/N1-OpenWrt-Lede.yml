@@ -16,11 +16,9 @@ on:
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
-  FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: N1.config
   SCRIPT_SH: script.sh
-#  CONFIG_SH: config.sh
-  SRC_SH: src.sh
+  CONFIG_SH: N1_config.sh
+ # SRC_SH: src.sh
   UPLOAD_FIRMWARE: true
   TZ: Asia/Shanghai
   
@@ -63,29 +61,29 @@ jobs:
         echo "useVersionInfo=$useVersionInfo" >> $GITHUB_ENV
         echo "DATE=$(date "+%Y-%m-%d %H:%M:%S")" >> $GITHUB_ENV
         echo "tag_name=$(date +%Y%m%d)" >> $GITHUB_ENV
-
-    - name: Load custom feeds
-      run: |
-        [ -e files ] && mv files openwrt/files
-        chmod +x $SCRIPT_SH
-        $GITHUB_WORKSPACE/$SCRIPT_SH
                       
     - name: Update feeds
       run: |
-        chmod +x $SRC_SH
-        $GITHUB_WORKSPACE/$SRC_SH
-        cd openwrt && ./scripts/feeds update -a
+        [ -e files ] && mv files openwrt/files
+        chmod +x $SCRIPT_SH
+        ./$SCRIPT_SH
+        cd openwrt 
+        echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> "feeds.conf.default"
+        echo "src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git;main" >> "feeds.conf.default"
+        ./scripts/feeds update -a
+        
         cat feeds/packages/utils/xfsprogs/Makefile
         sed -i 's/TARGET_CFLAGS += -DHAVE_MAP_SYNC/TARGET_CFLAGS += -DHAVE_MAP_SYNC -D_LARGEFILE64_SOURCE/' feeds/packages/utils/xfsprogs/Makefile
         ./scripts/feeds update -a
 
     - name: Install feeds
-      run: cd openwrt && ./scripts/feeds install -a
+      run: cd openwrt
+           ./scripts/feeds install -a
       
     - name: Load custom configuration
       run: |
         chmod +x $CONFIG_SH
-        $GITHUB_WORKSPACE/$CONFIG_SH
+        ./$CONFIG_SH
 
     - name: Download package
       run: |
