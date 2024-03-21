@@ -48,6 +48,7 @@ CONFIG_PACKAGE_ttyd=y
 
 # 推送
 CONFIG_PACKAGE_luci-app-wechatpush=y
+CONFIG_PACKAGE_iputils-arping=y
 
 # other packages
 #CONFIG_PACKAGE_autocore-arm=y
