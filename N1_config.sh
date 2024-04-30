@@ -113,4 +113,10 @@ CONFIG_PACKAGE_luci-i18n-autoreboot-zh-cn=n
 CONFIG_PACKAGE_luci-app-wol=n
 CONFIG_PACKAGE_wol=n
 CONFIG_PACKAGE_etherwake=n
+# shadowsocks
+CONFIG_PACKAGE_shadowsocks-libev-ss-local=n
+CONFIG_PACKAGE_shadowsocks-libev-ss-redir=n
+CONFIG_PACKAGE_shadowsocksr-libev-ssr-local=n
+CONFIG_PACKAGE_shadowsocksr-libev-ssr-redir=n
+CONFIG_PACKAGE_shadowsocks-rust-sslocal=n
 EOF
