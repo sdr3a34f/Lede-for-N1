@@ -1,6 +1,6 @@
-# N1 OpenWrt 轻量
+# N1-lede-OpenWrt 轻量
 
-   Openwrt 源码仓库 https://github.com/coolsnowwolf/lede
+   仓库: https://github.com/coolsnowwolf/lede
    
 -  https://github.com/huangqian8/Cloud-N1-OpenWrt
 -  
